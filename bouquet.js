@@ -36,7 +36,7 @@ const THEMES={
 const HP=new URLSearchParams(location.hash.slice(1));
 const giftMsg=(HP.get('m')||GIFT.msg).trim(),giftCap=(HP.get('c')||GIFT.caption||giftMsg).trim();
 const gift=!!giftMsg;
-let theme=HP.get('t')||GIFT.theme,msg=giftMsg,flashed=false,capTimer=0;
+let theme=HP.get('t')||GIFT.theme,msg=GIFT.petals===false?'':giftMsg,flashed=false,capTimer=0;
 if(!THEMES[theme])theme='classic';
 if(gift)document.body.classList.add('gift');
 function pal(set){let a=BASE[set];if(theme=='sunset'){const w=a.filter(p=>{const h=hue(p.c);return h>=0&&(h<60||h>320)});if(w.length)a=w;}return a.map(THEMES[theme]);}

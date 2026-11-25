@@ -2,6 +2,7 @@
 // - msg: shown inside the petals (keep it short, about 24 characters).
 // - caption: typed out under the bouquet (can be longer; emoji are fine).
 // - theme: 'classic', 'pastel', 'sunset' or 'moonlight'.
+// - petals: true to also spell the message inside the petals, false for flowers only.
 // Set msg to '' to open the playground mode with all the controls.
 //
 // You can also override these from the URL without editing code:
@@ -9,5 +10,6 @@
 const GIFT = {
   msg: 'Happiest onee Imanoo ♥',
   caption: 'Happiest onee Imanoo ♥️',
-  theme: 'classic'
+  theme: 'classic',
+  petals: false
 };

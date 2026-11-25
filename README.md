@@ -19,7 +19,8 @@ Edit `config.js`:
 const GIFT = {
   msg: 'Happy birthday',            // inside the petals (short)
   caption: 'Happy birthday, Sara',  // typed under the bouquet
-  theme: 'pastel'                   // classic | pastel | sunset | moonlight
+  theme: 'pastel',                  // classic | pastel | sunset | moonlight
+  petals: false                     // true = also spell the message in the petals
 };
 ```
 
